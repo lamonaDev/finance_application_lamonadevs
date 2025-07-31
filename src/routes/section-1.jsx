@@ -8,7 +8,7 @@ export default function SectionOne(properties) {
         <>
             <section className="section-one-container flex flex-col items-center justify-center gap-[40vh] mb-[40vh] mt-[10vh]">
                     <LineChartSectorTwo data={anotherData} typeOfChart={"Line"} sectorHeader={"this is the sector headerrr"}  sectorInfo={plainText} />
-                    <LineChartSector data={data} typeOfChart={"bar"} sectorHeader={"this is the sector header"}  sectorInfo={plainText + plainText + plainText} />
+                    <LineChartSector data={data} typeOfChart={"bar"} sectorHeader={"this is the sector header"}  sectorInfo={plainText} />
             </section>
         </>
     );
