@@ -51,9 +51,6 @@ main {
         .mobile-menu {
             transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         }
-.area-chart-header-blur-text {
-  @apply text-sm sm: text-base md:text-md text-center w-full sm:w-3/4 md:w-1/2 lg:w-fit px-4
-}
 /* @import 'tailwindcss/base'; */
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
