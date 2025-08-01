@@ -1,5 +1,5 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Line from '../components/charts/line';
+import AreaChart from "../components/charts/areaChart";
 import React from "react";
 export default function AreaChartSector(properties) {
     return (
@@ -8,7 +8,7 @@ export default function AreaChartSector(properties) {
                 {properties.typeOfChart} Chart
             </h1>
             <div className="w-full h-[50vh] sm:h-[10vh] md:h-[30vh] lg:h-[40vh] min-h-[400px]">
-                <Line data={properties.data} />
+                <AreaChart data={properties.data} date={properties.date} />
             </div>
             <article className="mt-6 flex flex-col items-center gap-4 sm:gap-6">
                 <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center">
