@@ -51,6 +51,8 @@ main {
         .mobile-menu {
             transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         }
+
+        
 /* @import 'tailwindcss/base'; */
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
