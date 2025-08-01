@@ -2,6 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import React from 'react';
+import ShinyText from "../reactBits/shinyText";
+import GradientText from "../reactBits/gradText";
 const Footer = () => {
     useEffect(() => { 
             AOS.init({
@@ -35,7 +37,17 @@ const Footer = () => {
             <img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="Twitter" />
         </a>
         </div>
-        <p className="text-center text-gray-700 font-medium">&copy; 2022 Company Ltd. All rights reserved.</p>
+            <p className="text-center text-gray-700 font-medium">
+                {/* <GradientText
+                    colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="text-content"
+                >
+                    &copy;2022 Company Ltd. All rights reserved.
+                </GradientText> */}
+                <ShinyText text="Just some shiny text!" disabled={false} speed={3} className='' />
+            </p>
     </footer>
     );
 };
