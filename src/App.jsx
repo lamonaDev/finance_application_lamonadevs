@@ -41,7 +41,8 @@ export default function App() {
     {
       path: '/', element: <MainLayout />, children: [
         { path: '/sectionOne', element: <SectionOne /> },
-        {index:true, element: <HomeSection />}
+          { index: true, element: <HomeSection /> },
+            {path: "/sectionTwo", element: <SectionTwo /> }
     ]},
   ])
   return (
