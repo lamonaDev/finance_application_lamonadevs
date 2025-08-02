@@ -1,7 +1,9 @@
-import MagicBento from "../components/reactBits/MagicBento";
+import MagicBento from "../components/reactBits/MagicBento/MagicBento";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function SectionTwo(properties) {
     return (
-            <MagicBento
+        <MagicBento
                 textAutoHide={true}
                 enableStars={true}
                 enableSpotlight={true}
@@ -11,7 +13,7 @@ export default function SectionTwo(properties) {
                 clickEffect={true}
                 spotlightRadius={300}
                 particleCount={12}
-                glowColor="200,200,200"
+                glowColor="0, 225, 175"
             />
     )
 }

@@ -9,7 +9,7 @@ const Nav = () => {
         })
     }, []);
     return (
-    <nav data-aos="fade-in" data-aos-duration="300" className="bg-emerald-300 flex justify-center items-center p-3 mx-auto m-5 max-w-[700px] rounded-3xl sticky top-3 shadow-2xl xl:min-w-[1000px] md:min-w-[600px]">
+    <nav data-aos="fade-in" data-aos-duration="300" className="z-[10000] bg-emerald-300 flex justify-center items-center p-3 mx-auto m-5 max-w-[700px] rounded-3xl sticky top-3 shadow-2xl xl:min-w-[1000px] md:min-w-[600px]">
     <ul className="text-white flex gap-x-10 xl:gap-x-20">
         <li data-aos="fade-right" data-aos-duration="500" className="relative table-cell py-1">
             <Link className="inline-block relative no-underline after-line text-emerald-950 hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all" to={"/"}><i className="bi bi-house text-2xl"></i></Link>

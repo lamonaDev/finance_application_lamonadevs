@@ -25,9 +25,9 @@ export default function HomeSection() {
           animateBy="words"
           direction="top"
           onAnimationComplete={""}
-          className="text-4xl"
+          className="text-4xl text-emerald-800"
         />
-        <i className="bi bi-cash-coin text-lg sm:text-2xl md:text-lg lg:text-3xl"></i>
+        <i className="bi bi-cash-coin text-lg sm:text-2xl md:text-lg lg:text-3xl text-emerald-600"></i>
       </h2>
       <article className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 min-w-[280px] bg-emerald-200 p-6 sm:p-8 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-sm sm:text-base md:text-lg lg:text-xl text-center h-auto mt-4 mb-6">
         <BlurText
@@ -35,8 +35,9 @@ export default function HomeSection() {
           delay={3}
           animateBy="letters"
           direction="top"
+          className="text-emerald-800"
         />
-        <i className="bi bi-star-fill text-black text-lg sm:text-lg mt-6 lg:text-2xl"></i>
+        <i className="bi bi-star-fill text-emerald-300 text-lg sm:text-lg mt-6 lg:text-2xl shadow-2xl"></i>
       </article>
     </section>
   );

@@ -7,7 +7,7 @@ import { useRef } from "react";
 export default function AreaChartSector(properties) {
     const containerRef = useRef(null);
     return (
-        <section data-aos="fade" data-aos-delay="300" className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 h-auto min-h-[40vh]">
+        <section data-aos="fade" data-aos-delay="300" className=" text-emerald-800 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 h-auto min-h-[40vh]">
             <h1 data-aos="fade" data-aos-delay="400" className="text-center px-6 py-2 bg-emerald-300 w-fit mx-auto rounded-2xl shadow-2xl mb-6 text-sm sm:text-base md:text-lg lg:text-xl">
                 {properties.typeOfChart}
             </h1>

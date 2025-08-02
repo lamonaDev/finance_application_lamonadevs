@@ -1,10 +1,11 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./MagicBento.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = "132, 0, 255";
+const DEFAULT_GLOW_COLOR = "0, 225, 150"; // Updated to white
 const MOBILE_BREAKPOINT = 768;
 
 const cardData = [
@@ -324,6 +325,7 @@ const ParticleCard = ({
 
   return (
     <div
+      data-aos="fade"
       ref={cardRef}
       className={`${className} particle-container`}
       style={{ ...style, position: "relative", overflow: "hidden" }}
@@ -479,7 +481,10 @@ const GlobalSpotlight = ({
 };
 
 const BentoCardGrid = ({ children, gridRef }) => (
-  <div className="card-grid bento-section mx-auto mb-7" ref={gridRef}>
+  <div
+    data-aos="fade" data-aos-duration="500" className="card-grid bento-section mx-auto mb-7 text-emerald-950"
+    ref={gridRef}
+  >
     {children}
   </div>
 );
@@ -554,12 +559,13 @@ const MagicBento = ({
                 clickEffect={clickEffect}
                 enableMagnetism={enableMagnetism}
               >
-                <div className="card__header">
-                  <div className="card__label">{card.label}</div>
+                <div data-aos="fade" data-aos-delay="300" className="card__header">
+                  <div data-aos="fade" data-aos-delay="400" className="card__label">{card.label}</div>
                 </div>
+                <div data-aos="fade" data-aos-delay="500" className="content text-sm w-fit text-emerald-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, non.</div>
                 <div className="card__content">
-                  <h2 className="card__title">{card.title}</h2>
-                  <p className="card__description">{card.description}</p>
+                  <h2 data-aos="fade" data-aos-delay="600" className="card__title">{card.title}</h2>
+                  <p data-aos="fade" data-aos-delay="700" className="card__description">{card.description}</p>
                 </div>
               </ParticleCard>
             );
