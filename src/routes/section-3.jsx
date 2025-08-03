@@ -20,8 +20,8 @@ export default function ContactSection(properties) {
             <div className="p-1 bg-gradient-to-r from-[rgba(0,225,150,0.8)] to-[rgb(0,200,130)]">
                 <div className="bg-emerald-900 p-6 md:p-8 rounded-xl">
                 <AnimatedContent distance={100} direction="vertical" reverse={true} duration={0.7} ease="power3.out" initialOpacity={0.1} animateOpacity scale={1} threshold={0.1} delay={0.4} >
-                    {/* <h2 className="text-3xl md:text-4xl font-extrabold text-center mt-4 mb-10 bg-gradient-to-r from-[rgb(0,200,130)] to-[rgb(0,225,150)] bg-clip-text text-transparent tracking-wider">Get In Touch</h2> */}
-                    <div className="mx-auto w-fit">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-center mt-4 mb-10 bg-gradient-to-r from-[rgb(0,200,130)] to-[rgb(0,225,150)] bg-clip-text text-transparent tracking-wider">Get In Touch</h2>
+                    {/* <div className="mx-auto w-fit">
                         <BlurText
                             text="Get In Touch"
                             delay={70}
@@ -30,7 +30,7 @@ export default function ContactSection(properties) {
                             onAnimationComplete={""}
                             className="mx-auto text-3xl md:text-4xl font-extrabold text-center mt-4 mb-10 bg-gradient-to-r from-[rgb(0,200,130)] to-[rgb(0,225,150)] bg-clip-text text-transparent tracking-wider"
                         />
-                    </div>
+                    </div> */}
                 </AnimatedContent>
                 <form className="space-y-9">
                 <AnimatedContent distance={100} direction="vertical" reverse={true} duration={0.7} ease="power3.out" initialOpacity={0} animateOpacity scale={1} threshold={0.1} delay={0.5} >
