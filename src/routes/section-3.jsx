@@ -19,7 +19,7 @@ export default function ContactSection(properties) {
             <div className="max-w-md md:max-w-2xl lg:max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl">
             <div className="p-1 bg-gradient-to-r from-[rgba(0,225,150,0.8)] to-[rgb(0,200,130)]">
                 <div className="bg-emerald-900 p-6 md:p-8 rounded-xl">
-                <AnimatedContent distance={100} direction="vertical" reverse={true} duration={0.7} ease="power3.out" initialOpacity={0} animateOpacity scale={1} threshold={0.1} delay={0.4} >
+                <AnimatedContent distance={100} direction="vertical" reverse={true} duration={0.7} ease="power3.out" initialOpacity={0.1} animateOpacity scale={1} threshold={0.1} delay={0.4} >
                     {/* <h2 className="text-3xl md:text-4xl font-extrabold text-center mt-4 mb-10 bg-gradient-to-r from-[rgb(0,200,130)] to-[rgb(0,225,150)] bg-clip-text text-transparent tracking-wider">Get In Touch</h2> */}
                     <div className="mx-auto w-fit">
                         <BlurText
