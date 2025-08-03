@@ -7,7 +7,7 @@ import MainLayout from './layout/mainLayout'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SectionOne from './routes/section-1'
 import SectionTwo from './routes/section-2'
-import SectionThree from './routes/section-3'
+import ContactSection from './routes/section-3'
 import HomeSection from './routes/homeSection'
 function MainApp() {
   const [count, setCount] = useState(0)
@@ -42,8 +42,9 @@ export default function App() {
       path: '/', element: <MainLayout />, children: [
         { path: '/sectionOne', element: <SectionOne /> },
           { index: true, element: <HomeSection /> },
-            {path: "/sectionTwo", element: <SectionTwo /> }
-    ]},
+            {path: "/sectionTwo", element: <SectionTwo /> },
+              {path: "/contact", element: <ContactSection />}
+    ]}, 
   ])
   return (
     <>

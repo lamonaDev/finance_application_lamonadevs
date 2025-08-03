@@ -29,7 +29,7 @@ export default function HomeSection() {
         />
         <i className="bi bi-cash-coin text-lg sm:text-2xl md:text-lg lg:text-3xl text-emerald-600"></i>
       </h2>
-      <article className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 min-w-[280px] bg-emerald-200 p-6 sm:p-8 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-sm sm:text-base md:text-lg lg:text-xl text-center h-auto mt-4 mb-6">
+      <article className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 min-w-[280px] bg-emerald-200 p-6 sm:p-8 rounded-3xl shadow-2xl flex flex-col items-center justify-center text-sm sm:text-base md:text-lg lg:text-xl text-center h-auto mt-4 mb-6 mx-auto">
         <BlurText
           text={longText}
           delay={3}

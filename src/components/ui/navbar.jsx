@@ -21,11 +21,10 @@ const Nav = () => {
             <Link className="inline-block relative no-underline after-line text-emerald-950 hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all" to={"/sectionTwo"}><i className="bi bi-graph-up text-2xl"></i></Link>
         </li>
         <li data-aos="fade-right" data-aos-duration="800" className="relative table-cell py-1">
-            <a className="inline-block relative no-underline after-line text-emerald-950 hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all" href="#"><i className="bi bi-envelope-at-fill text-2xl"></i></a>
+            <Link className="inline-block relative no-underline after-line text-emerald-950 hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all" to={"/contact"}><i className="bi bi-envelope-at-fill text-2xl"></i></Link>
         </li>
     </ul>
     </nav>
     );
 };
-
 export default Nav;
