@@ -36,7 +36,7 @@ const Footer = () => {
             <img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="Twitter" />
         </a>
         </div>
-            <p className="text-center text-gray-700 font-medium">
+            <p className="text-center text-emerald-900 font-medium">
                 {/* <GradientText
                     colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                     animationSpeed={3}
@@ -45,7 +45,8 @@ const Footer = () => {
                 >
                     &copy;2022 Company Ltd. All rights reserved.
                 </GradientText> */}
-                <ShinyText text="Just some shiny text!" disabled={false} speed={3} className='' />
+                {/* <ShinyText text="Just some shiny text!" disabled={false} speed={3} className='' /> */}
+                &copy;2022 Company Ltd. All rights reserved.
             </p>
     </footer>
     );
