@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import React from 'react';
 import ShinyText from "../reactBits/shinyText";
 import GradientText from "../reactBits/gradText";
+import { Link } from "react-router-dom";
 const Footer = () => {
     useEffect(() => { 
             AOS.init({
@@ -13,12 +14,10 @@ const Footer = () => {
     return (
     <footer data-aos="fade" data-aos-delay="300" className="flex flex-col space-y-10 justify-center p-5 bg-emerald-300 shadow-2xl">
         <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-            <a data-aos="fade-left" data-aos-delay="400" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">Home</a>
-            <a data-aos="fade-left" data-aos-delay="500" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">About</a>
-            <a data-aos="fade-left" data-aos-delay="600" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">Services</a>
-            <a data-aos="fade-left" data-aos-delay="700" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">Media</a>
-            <a data-aos="fade-left" data-aos-delay="800" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">Gallery</a>
-            <a data-aos="fade-left" data-aos-delay="900" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" href="#">Contact</a>
+            <Link data-aos="fade-left" data-aos-delay="400" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" to={'/'}>Home</Link>
+            <Link data-aos="fade-left" data-aos-delay="500" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" to={'/sectionOne'}>Charts</Link>
+            <Link data-aos="fade-left" data-aos-delay="600" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" to={'/sectionTwo'}>About</Link>
+            <Link data-aos="fade-left" data-aos-delay="700" className="hover:text-emerald-500 hover:bg-emerald-900 p-2 rounded transition-all text-emerald-950" to={'/contact'}>Contact</Link>
         </nav>
         <div className="flex justify-center space-x-5">
         <a  href="https://facebook.com" target="_blank" rel="noopener noreferrer">
